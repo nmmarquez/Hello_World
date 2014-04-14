@@ -1,0 +1,43 @@
+### Here we will list a few commands you can use with get
+
+### first things first you need to set up your computers git with ur username
+### and password
+git config --global user.name "nmmarquez"
+git config --global user.email "nmmarquez@gmail.com"
+
+### for MacOSX sysyems we can have the computer remember the password for
+### all commits!!! Check it out
+git credential-osxkeychain
+
+### if that command returned an error go to the url below
+https://help.github.com/articles/set-up-git
+
+### lastly we need to configure the git system to use the password saved
+git config --global credential.helper osxkeychain
+
+### so next we need to create a new folder to save everything in
+mkdir ~/github
+mkdir ~/github/Hello_World
+cd ~/github/Hello_World
+
+### then we need to initialize it with git
+git init
+
+### then we can creat file here for version control later!
+touch README
+
+### lets add all the files now to our next commit
+git add *
+
+### next we will commit the files and add an annotation with
+### the -m parameter
+git commit -m 'added git_intro file'
+
+### lastly we will go online to 'push' our commit
+### first we create a remote named 'origin'
+git remote add orrigin https://github.com/nmmarquez/Hello_World.git
+
+### then we 'push' the commit to our online repository
+git push origin master
+
+### sweet sweet victory!!!
