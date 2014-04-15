@@ -35,7 +35,7 @@ git commit -m 'added git_intro file'
 
 ### lastly we will go online to 'push' our commit
 ### first we create a remote named 'origin'
-git remote add orrigin https://github.com/nmmarquez/Hello_World.git
+git remote add origin https://github.com/nmmarquez/Hello_World.git
 
 ### then we 'push' the commit to our online repository
 git push origin master
